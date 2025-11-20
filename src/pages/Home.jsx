@@ -45,7 +45,7 @@ const Home = () => {
         <div className="w-36 h-36 mx-auto mb-8 rounded-full p-1 bg-gradient-to-r from-purple-400 to-pink-400 animate-spin-slow">
           <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center overflow-hidden">
             <img
-              className="object-cover w-32 h-32 rounded-full"
+              className="object-cover mt-7 rounded-full"
               src={img}
               alt="Leanghai Chheang"
             />

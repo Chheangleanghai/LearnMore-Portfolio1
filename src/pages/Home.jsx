@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronDown, Github, Mail, User, Send } from 'lucide-react';
 import img from '../../public/image.png'
 const Home = () => {
-  const roles = ["Web Frontend Developer"];
+  const roles = ["Web Developer"];
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0); // letter index
   const [roleIndex, setRoleIndex] = useState(0); // which role in array

@@ -65,8 +65,7 @@ const Home = () => {
 
         {/* Description */}
         <p className="text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Motivated and detail-oriented student with a strong interest in Frontend Development. 
-          Skilled in HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, jQuery, and React.js, with a passion for building responsive and user-friendly web applications.
+          Motivated and detail-oriented student with a strong passion for web development and emerging technologies. Eager to apply skills in building innovative, user-friendly web applications while continuously learning and improving.
         </p>
 
         {/* Social Icons */}

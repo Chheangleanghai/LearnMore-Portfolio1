@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Home, User, Star, Briefcase, GraduationCap } from "lucide-react";
+import { Home, User, Star, Briefcase, GraduationCap , Contact} from "lucide-react";
 import logo from '../../public/logo.png'
 
 const navItems = [

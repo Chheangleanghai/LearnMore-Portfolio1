@@ -36,12 +36,9 @@ const Home = () => {
   }, [index, isDeleting, roles, roleIndex]);
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <section className="min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       {/* Floating background shapes */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute w-72 h-72 bg-purple-700/20 rounded-full top-10 -left-10 animate-blob animation-delay-2000"></div>
-        <div className="absolute w-96 h-96 bg-pink-700/20 rounded-full -bottom-20 -right-20 animate-blob animation-delay-4000"></div>
-      </div>
+      
 
       <div className="text-center z-10 max-w-4xl mx-auto px-4">
         {/* Profile Image */}
@@ -73,7 +70,8 @@ const Home = () => {
         </p>
 
         {/* Social Icons */}
-        <div className="flex justify-center space-x-6">
+        <div className="flex justify-center space-x-6 items-center">
+         
           <a
             href="https://github.com/Chheangleanghai"
             target="_blank"
@@ -82,14 +80,13 @@ const Home = () => {
           >
             <Github className="w-6 h-6" />
           </a>
-          <a
-            href="https://t.me/Chheang_leanghai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-purple-400 transition-all duration-300 transform hover:scale-125"
-          >
+         <a
+         href="https://t.me/Chheang_leanghai"
+         target="blank"
+          className="py-3 px-5 border-2 flex space-x-2 border-purple-400 text-purple-400 rounded-full font-medium hover:bg-purple-400 hover:text-slate-900 transition-colors duration-300">
+            Contact Me:
             <Send className="w-6 h-6" />
-          </a>
+         </a>
           <a
             href="mailto:chheangleanghai160@gmail.com"
             className="text-gray-400 hover:text-purple-400 transition-all duration-300 transform hover:scale-125"
@@ -103,27 +100,6 @@ const Home = () => {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ChevronDown className="w-6 h-6 text-gray-400" />
       </div>
-
-      {/* Extra CSS for animations */}
-      <style jsx>{`
-        @keyframes blob {
-          0%, 100% {
-            transform: translate(0px, 0px) scale(1);
-          }
-          33% {
-            transform: translate(30px, -50px) scale(1.1);
-          }
-          66% {
-            transform: translate(-20px, 20px) scale(0.9);
-          }
-        }
-        .animate-blob {
-          animation: blob 8s infinite;
-        }
-        .animate-spin-slow {
-          animation: spin 20s linear infinite;
-        }
-      `}</style>
     </section>
   );
 };

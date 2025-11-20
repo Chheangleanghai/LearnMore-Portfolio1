@@ -18,10 +18,10 @@ const Navbar = ({ currentPath, isScrolled }) => {
         isScrolled ? "bg-slate-900/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center ">
-            <img className="w-14 " src={logo} alt="logo" /> <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">ernMore</span>
+            <img className="md:w-11 sm:w-10 w-8 " src={logo} alt="logo" /> <span className="md:text-2xl sm:text-xl text-lg font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">ernMore</span>
           </Link>
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (

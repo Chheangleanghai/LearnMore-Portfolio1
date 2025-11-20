@@ -1,21 +1,23 @@
 import React from "react";
 import { Code, Palette, Smartphone, Database } from "lucide-react";
 import { motion } from "framer-motion";
+import { SiBootstrap, SiCss3, SiGit, SiHtml5, SiJavascript, SiJquery, SiLaravel, SiLibreoffice, SiMediafire, SiMicrobit, SiMicroeditor, SiOnlyoffice, SiReact, SiSoftpedia, SiSpring, SiTailwindcss, SiWordpress } from "react-icons/si";
+
 
 const skills = [
-  { name: 'HTML5', level: 95, icon: <Code className="w-6 h-6" />, color: 'from-orange-400 to-orange-600' },
-  { name: 'CSS3', level: 88, icon: <Palette className="w-6 h-6" />, color: 'from-blue-400 to-blue-600' },
-  { name: 'Tailwind CSS', level: 85, icon: <Palette className="w-6 h-6" />, color: 'from-cyan-400 to-cyan-600' },
-  { name: 'Bootstrap', level: 82, icon: <Palette className="w-6 h-6" />, color: 'from-purple-400 to-purple-600' },
-  { name: 'JavaScript (ES6+)', level: 80, icon: <Code className="w-6 h-6" />, color: 'from-yellow-400 to-yellow-600' },
-  { name: 'React.js', level: 75, icon: <Code className="w-6 h-6" />, color: 'from-blue-500 to-blue-700' },
-  { name: 'jQuery', level: 70, icon: <Code className="w-6 h-6" />, color: 'from-blue-300 to-blue-500' },
-  { name: 'Git & GitHub', level: 75, icon: <Code className="w-6 h-6" />, color: 'from-gray-500 to-gray-700' },
-  { name: 'Responsive Design', level: 85, icon: <Smartphone className="w-6 h-6" />, color: 'from-green-400 to-green-600' },
-  { name: 'PHP & Laravel', level: 60, icon: <Database className="w-6 h-6" />, color: 'from-red-400 to-red-600' },
-  { name: 'Java & SpringBoot', level: 60, icon: <Database className="w-6 h-6" />, color: 'from-pink-400 to-pink-600' },
-  { name: 'Microsoft Office', level: 50, icon: <Code className="w-6 h-6" />, color: 'from-blue-600 to-blue-800' },
-  { name: 'Problem Solving', level: 80, icon: <Code className="w-6 h-6" />, color: 'from-purple-500 to-purple-700' },
+  { name: 'HTML5', level: 95, icon: <SiHtml5 className="w-6 h-6 text-orange-500" />, color: 'from-orange-400 to-orange-600' },
+  { name: 'CSS3', level: 88, icon: <SiCss3 className="w-6 h-6 text-blue-500" />, color: 'from-blue-400 to-blue-600' },
+  { name: 'Tailwind CSS', level: 85, icon: <SiTailwindcss className="w-6 h-6 text-cyan-500" />, color: 'from-cyan-400 to-cyan-600' },
+  { name: 'Bootstrap', level: 82, icon: <SiBootstrap className="w-6 h-6 text-purple-500" />, color: 'from-purple-400 to-purple-600' },
+  { name: 'JavaScript (ES6+)', level: 80, icon: <SiJavascript className="w-6 h-6 text-yellow-500" />, color: 'from-yellow-400 to-yellow-600' },
+  { name: 'React.JS', level: 75, icon: <SiReact className="w-6 h-6 text-blue-600" />, color: 'from-blue-500 to-blue-700' },
+  { name: 'jQuery', level: 70, icon: <SiJquery className="w-6 h-6 text-blue-400" />, color: 'from-blue-300 to-blue-500' },
+  { name: 'Git & GitHub', level: 75, icon: <SiGit className="w-6 h-6 text-orange-600" />, color: 'from-orange-500 to-orange-700' },
+  { name: 'Responsive Design', level: 85, icon: <SiMediafire className="w-6 h-6 text-pink-500" />, color: 'from-pink-400 to-pink-600' },
+  { name: 'PHP & Laravel', level: 60, icon: <SiLaravel className="w-6 h-6 text-red-500" />, color: 'from-red-400 to-red-600' },
+  { name: 'Java & SpringBoot', level: 60, icon: <SiSpring className="w-6 h-6 text-green-500" />, color: 'from-green-400 to-green-600' },
+  { name: 'Microsoft Office', level: 50, icon: <SiOnlyoffice className="w-6 h-6 text-blue-700" />, color: 'from-blue-600 to-blue-800' },
+  { name: 'Problem Solving', level: 80, icon: <SiSoftpedia className="w-6 h-6 text-purple-600" />, color: 'from-purple-500 to-purple-700' },
 ];
 
 const Skills = () => {
@@ -40,12 +42,12 @@ const Skills = () => {
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center space-x-3">
-                  <div className="p-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg group-hover:scale-110 transition-transform duration-200">
+                  <div className="p-2 rounded-lg group-hover:scale-110 transition-transform duration-200">
                     {skill.icon}
                   </div>
                   <span className="font-semibold text-lg">{skill.name}</span>
                 </div>
-                <span className="text-gray-400 font-medium">{skill.level}%</span>
+                <span className=" font-medium">{skill.level}%</span>
               </div>
               <div className="w-full bg-slate-700 rounded-full h-3 overflow-hidden">
                 <motion.div

@@ -2,7 +2,7 @@ import React from "react";
 import { Code, Palette, Smartphone, Database } from "lucide-react";
 
 const skills = [
-  { name: 'HTML5', level: 90, icon: <Code className="w-6 h-6" />, color: 'bg-orange-500' },
+  { name: 'HTML5', level: 95, icon: <Code className="w-6 h-6" />, color: 'bg-orange-500' },
   { name: 'CSS3', level: 88, icon: <Palette className="w-6 h-6" />, color: 'bg-blue-500' },
   { name: 'Tailwind CSS', level: 85, icon: <Palette className="w-6 h-6" />, color: 'bg-cyan-500' },
   { name: 'Bootstrap', level: 82, icon: <Palette className="w-6 h-6" />, color: 'bg-purple-500' },

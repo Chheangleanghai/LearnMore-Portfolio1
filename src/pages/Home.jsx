@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Github, Mail, User, Send } from 'lucide-react';
-
+import img from '../../public/image.png'
 const Home = () => {
   const roles = ["Web Frontend Developer"];
   const [displayedText, setDisplayedText] = useState("");
@@ -39,8 +39,8 @@ const Home = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10"></div>
       <div className="text-center z-10 max-w-4xl mx-auto px-4">
         <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 p-1">
-          <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-            <User className="w-16 h-16 text-purple-400" />
+          <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center overflow-hidden">
+            <img className='object-cover w-[120px] mt-5' src={img} alt="" />
           </div>
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">

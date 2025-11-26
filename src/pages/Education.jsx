@@ -3,25 +3,19 @@ import { BookOpen, Award } from "lucide-react";
 
 const education = [
   {
-    degree: "Bachelor of Computer Science and Engineering",
-    school: "Royal University of Phnom Penh (RUPP)",
-    period: "2024 - Present (Year 2)",
-    details: "Currently pursuing my degree in Computer Science and Engineering.",
-  },
-  {
-    degree: "High School Diploma",
-    school: "Koh Kong High School",
-    period: "2021 - 2023",
-    details: "Completed high school education with a focus on science and mathematics.",
-  },
-  {
-    degree: "Frontend Development Certificate",
+    degree: "Backend Web Development Certificate",
     school: "ETEC",
     period: "2025",
-    details: "Professional certificate in frontend development technologies and practices.",
+    details: "Professional certificate in frontend development technologies and practices.(PHP, Laravel)",
   },
   {
-    degree: "Adobe Photoshop Certificate",
+    degree: "Frontend Web Development Certificate",
+    school: "ETEC",
+    period: "2025",
+    details: "Professional certificate in frontend development technologies and practices.(HTML, CSS, Bootstrap, TailwindCSS, JavaScript, JQuery, ReactJS, Git)",
+  },
+  {
+    degree: "Adobe Photoshop & Illustrator Certificate",
     school: "ETEC",
     period: "2025",
     details: "Certificate in digital design and image editing using Adobe Photoshop.",
@@ -32,6 +26,18 @@ const education = [
     period: "2024",
     details: "Certificate in C++ programming and Object-Oriented Programming concepts.",
   },
+  {
+    degree: "Bachelor of Computer Science and Engineering",
+    school: "Royal University of Phnom Penh (RUPP)",
+    period: "2024 - Present (Year 2)",
+    details: "Currently pursuing my degree in Computer Science and Engineering.",
+  },
+  {
+    degree: "High School Diploma",
+    school: "Koh Kong High School",
+    period: "2021 - 2023",
+    details: "Completed high school education with a focus on science and mathematics.",
+  }
 ];
 
 const Education = () => {
